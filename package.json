@@ -6,7 +6,14 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint-staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": [
+      "prettier . --write"
+    ]
   },
   "dependencies": {
     "@quasar/extras": "^2.1.0",
@@ -16,6 +23,8 @@
   "devDependencies": {
     "@quasar/vite-plugin": "^2.0.2",
     "@vitejs/plugin-vue": "^6.0.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.9",
     "sass-embedded": "^1.104.1",
     "vite": "^8.3.0"
   }

@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import Quasar from 'quasar/src/vue-plugin.js';
+import Quasar from 'quasar/src/vue-plugin.js'
 import '@quasar/extras/material-icons/material-icons.css'
 import 'quasar/src/css/index.sass'
 
