@@ -1,7 +1,7 @@
 <template>
   <div class="row q-pa-md justify-center items-center full-width text-no-wrap">
     <div class="col col-md-auto">
-      <q-img src="/images/proteco.png" height="30vh" width="30vh" />
+      <q-img :src="`${BASE_PATH}/images/proteco.png`" height="30vh" width="30vh" />
     </div>
     <div class="col col-md-auto">
       <div class="row q-px-md">
@@ -28,21 +28,23 @@
 <script setup>
 import Field from '@/components/Field.vue'
 
+const BASE_PATH = import.meta.env.VITE_BASE_PATH ?? ''
+
 const fields = [
   {
-    imagePath: '/images/alarm.png',
+    imagePath: `${BASE_PATH}/images/alarm.png`,
     text: 'ALARME',
   },
   {
-    imagePath: '/images/camera.png',
+    imagePath: `${BASE_PATH}/images/camera.png`,
     text: 'VIDÉOSURVEILLANCE',
   },
   {
-    imagePath: '/images/access.png',
+    imagePath: `${BASE_PATH}/images/access.png`,
     text: "CONTRÔLE D'ACCÈS",
   },
   {
-    imagePath: '/images/cable.png',
+    imagePath: `${BASE_PATH}/images/cable.png`,
     text: 'CABLÂGE INFORMATIQUE',
   },
 ]
