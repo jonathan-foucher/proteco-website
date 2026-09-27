@@ -23,6 +23,8 @@ jobs:
         id: build
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}
+          VITE_PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
+          VITE_EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
         run: |
           pnpm i
           pnpm run build
