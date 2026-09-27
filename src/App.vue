@@ -1,6 +1,6 @@
 <script setup>
-import MainPage from './components/MainPage.vue'
-import AppFooter from './components/AppFooter.vue'
+import MainPage from '@/components/MainPage.vue'
+import AppFooter from '@/components/AppFooter.vue'
 </script>
 
 <template>
