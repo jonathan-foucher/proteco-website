@@ -13,6 +13,12 @@ jobs:
       - name: checkout project
         id: checkout
         uses: actions/checkout@v4
+      - name: install pnpm
+        id: install_pnpm
+        uses: pnpm/setup@v1
+        with:
+          runtime: node@24
+          cache: true
       - name: build app
         id: build
         run: |
