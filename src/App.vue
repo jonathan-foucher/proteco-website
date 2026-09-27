@@ -6,14 +6,15 @@ import AppFooter from './components/AppFooter.vue'
 <template>
   <q-layout class="noselect">
     <q-page-container>
-      <q-page class="q-pa-md">
-        <main-page />
+      <q-page>
+        <div class="row main-page">
+          <main-page />
+        </div>
+        <div class="row footer">
+          <app-footer />
+        </div>
       </q-page>
     </q-page-container>
-
-    <q-footer elevated>
-      <app-footer />
-    </q-footer>
   </q-layout>
 </template>
 
@@ -25,5 +26,15 @@ import AppFooter from './components/AppFooter.vue'
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+</style>
+
+<style scoped>
+.main-page {
+  height: 75vh;
+}
+
+.footer {
+  height: 25vh;
 }
 </style>
