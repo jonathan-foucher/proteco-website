@@ -1,6 +1,6 @@
 <template>
   <div class="col col-2 col-sm-6 col-md-2 q-pa-sm flex justify-center text-no-wrap">
-    <div class="column justify-center">
+    <div class="column justify-center items-center">
       <q-img class="field-image" :src="imagePath" />
       <span class="field-text text-center q-mt-sm">{{ text }}</span>
     </div>
