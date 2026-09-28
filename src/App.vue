@@ -7,10 +7,10 @@ import AppFooter from '@/components/AppFooter.vue'
   <q-layout class="noselect">
     <q-page-container>
       <q-page>
-        <div class="row main-page">
+        <div class="row">
           <main-page />
         </div>
-        <div class="row footer">
+        <div class="row">
           <app-footer />
         </div>
       </q-page>
@@ -27,14 +27,9 @@ import AppFooter from '@/components/AppFooter.vue'
   -ms-user-select: none;
   user-select: none;
 }
-</style>
 
-<style scoped>
-.main-page {
-  height: 75vh;
-}
-
-.footer {
-  height: 25vh;
+.full-width-row {
+  width: 100%;
+  max-width: 100%;
 }
 </style>

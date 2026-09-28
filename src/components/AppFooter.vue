@@ -1,33 +1,33 @@
 <template>
-  <div class="row q-pa-md bg-dark justify-center items-center full-width text-white text-no-wrap">
-    <div class="col col-md-auto q-px-md">
+  <div class="row q-pa-md bg-dark justify-center items-center full-width-row text-white text-no-wrap">
+    <div class="col q-px-md">
       <div class="row q-pa-sm items-center">
-        <div class="col col-md-auto">
-          <q-icon name="phone" size="4em" color="primary" />
+        <div class="col-2 col-md-2">
+          <q-icon name="phone" size="4vw" color="primary" />
         </div>
-        <div class="col col-md-auto q-pl-md">
-          <span class="phone-number" @click="copyText(PHONE_NUMBER, 'Numéro copié')">{{ PHONE_NUMBER }}</span>
+        <div class="col-6 col-md-4 q-pl-md">
+          <span class="info-text copy-pointer" @click="copyText(PHONE_NUMBER, 'Numéro copié')">{{ PHONE_NUMBER }}</span>
         </div>
       </div>
 
       <div class="row q-pa-sm items-center">
-        <div class="col col-md-auto">
-          <q-icon name="mail" size="4em" color="primary" />
+        <div class="col-2 col-md-2">
+          <q-icon name="mail" size="4vw" color="primary" />
         </div>
-        <div class="col col-md-auto q-pl-md">
-          <span class="email-address" @click="openMail(EMAIL_ADDRESS)">{{ EMAIL_ADDRESS }}</span>
+        <div class="col-6 col-md-4 q-pl-md">
+          <span class="info-text copy-pointer" @click="openMail(EMAIL_ADDRESS)">{{ EMAIL_ADDRESS }}</span>
         </div>
       </div>
     </div>
 
     <q-separator vertical spaced color="white" />
 
-    <div class="col col-md-auto q-px-md">
+    <div class="col q-px-md">
       <div class="row q-pa-sm items-center">
-        <div class="col col-md-auto">
-          <q-icon name="location_on" size="4em" color="primary" />
+        <div class="col-2 col-md-2">
+          <q-icon name="location_on" size="4vw" color="primary" />
         </div>
-        <div class="col col-md-auto q-pl-md">
+        <div class="col-6 col-md-4 q-pl-md">
           <div class="row">
             <span class="info-text">Votre secteur d'intervention</span>
           </div>
@@ -38,11 +38,16 @@
       </div>
 
       <div class="row q-pa-sm items-center">
-        <div class="col col-md-auto">
-          <q-icon name="gpp_good" size="4em" color="primary" />
+        <div class="col-2 col-md-2">
+          <q-icon name="gpp_good" size="4vw" color="primary" />
         </div>
-        <div class="col col-md-auto q-pl-md">
-          <span class="info-text">Devis gratuit - Intervention soignée</span>
+        <div class="col-6 col-md-4 q-pl-md">
+          <div class="row">
+            <span class="info-text">Devis gratuit</span>
+          </div>
+          <div class="row">
+            <span class="info-text">Intervention soignée</span>
+          </div>
         </div>
       </div>
     </div>
@@ -84,16 +89,11 @@ const openMail = (mailAddress) => {
 </script>
 
 <style scoped>
-.phone-number {
+.copy-pointer {
   cursor: copy;
-  font-size: 1.5em;
-}
-
-.email-address {
-  font-size: 1.2em;
 }
 
 .info-text {
-  font-size: 1.2em;
+  font-size: 2vw;
 }
 </style>
