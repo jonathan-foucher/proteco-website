@@ -1,6 +1,6 @@
 <template>
-  <div class="row q-pa-md bg-dark justify-center items-center full-width-row text-white text-no-wrap">
-    <div class="col q-px-md">
+  <div class="row q-pa-md bg-dark justify-evenly items-center full-width-row text-white text-no-wrap">
+    <div class="column">
       <div class="row q-pa-sm items-center">
         <div class="col-2 col-md-2">
           <q-icon name="phone" size="4vw" color="primary" />
@@ -22,7 +22,7 @@
 
     <q-separator vertical spaced color="white" />
 
-    <div class="col q-px-md">
+    <div class="column">
       <div class="row q-pa-sm items-center">
         <div class="col-2 col-md-2">
           <q-icon name="location_on" size="4vw" color="primary" />
